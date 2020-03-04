@@ -2,6 +2,7 @@ console.log(console.log);
 
 var day = prompt('Enter day of the week');
 
+
 /*  ВАРИАНТ-1 --Так работает, но кажется слишком сложным:
 if (day == 'monday') {
     alert('Working day');
@@ -22,16 +23,16 @@ else {
     alert('Can not define, please try another value');
 } */
 
-/* Так при вводе любого значения выдает 'Working day' 
-if (day == 'monday', 'thursday', 'wednesday', 'thursday', 'friday') {
+/* Так при вводе любого значения выдает 'Working day' */
+if (day == 'monday' || day == 'thursday' || day == 'wednesday' || day == 'thursday' || day == 'friday') {
     alert('Working day');
-} else if (day == 'saturday', 'sunday') {
+} else if (day == 'saturday' || day == 'sunday') {
     alert('Weekend');
 } else {
     alert('Can not define, please try another value');
-} */
+} 
 
-/* ВАРИАНТ2 Switch - не работает, если вводит значение с заглавной */
+/* ВАРИАНТ2 Switch - не работает, если вводит значение с заглавной 
 switch (day) {
     case 'monday':
     case 'tuesday':
@@ -43,6 +44,4 @@ switch (day) {
      case 'sunday':   
         alert( 'weekand'); break;
 }
-
-
-
+*/
